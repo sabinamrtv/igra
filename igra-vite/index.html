@@ -1,13 +1,31 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Капсула в недра Земли</title>
+    <link rel="stylesheet" href="src/style2.css" />
+    <style>
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div id="container">
+      <div id="capsule">
+        <img src="images/capsule.png" alt="Капсула" />
+      </div>
+      <div id="layers"></div>
+    </div>
+
+    <div id="info-box">
+      <h2 id="layer-name">Слой</h2>
+      <p id="depth">Глубина: 0 м</p>
+      <p id="temperature">Температура: 15°C</p>
+      <p id="fact">Факт: —</p>
+    </div>
+
+    <div id="zoom-lens"></div>
+
+    <script src="src/main2.js"></script>
+ 
   </body>
 </html>
