@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Путешествие к Ядру Земли</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт-скроллер</title>
+  <link rel="stylesheet" href="/Frontend/assets/css/styless.css">
+
 </head>
+
 <body>
-    <div id="earth-scroller" class="scroller">
-        <div id="layer-info" class="layer-info"></div>
-        <div id="animals-info" class="animals-info"></div>
-        <div id="earth-layers">
-        </div>
+  </script>
+  <section class="section" id="eath">Поверхность Земли</section>
+  <section class="section" id="crust">Земная кора</section>
+  <section class="section" id="upper-mantle">Верхняя мантия</section>
+  <section class="section" id="middle-mantle">Средняя мантия</section>
+  <section class="section" id="lower-mantle">Нижняя мантия</section>
+  <section class="section" id="core">Ядро</section>
+
+  <div class="depth-counter" id="depthCounter">
+    <div class="digit-box" id="d1">0</div>
+    <div class="digit-box" id="d2">0</div>
+    <div class="digit-box" id="d3">0</div>
+    <div class="digit-box" id="d4">0</div>
+    <span class="km-label">км</span>
+  </div>
+
+  <div class="temperature-indicator" id="temperatureIndicator">
+    <img src="/Frontend/assets/public/images/thermometer.png" alt="Термометр" class="thermo-icon">
+    <span id="temperatureValue">0</span><span class="degree">°C</span>
+  </div>
+
+  <div class="elevator-track">
+    <div class="elevator-cabin">
+      <img src="/Frontend/assets/public/images/5.webp" alt="Лифт">
+      <img src="/Frontend/assets/public/images/character (2).svg" alt="Человечек" class="person-inside">
     </div>
-    <script src="dist/main.js"></script>
+  </div>
+
+
+
+  <script src="/Frontend/assets/dist/main.js"></script>
 </body>
+
 </html>

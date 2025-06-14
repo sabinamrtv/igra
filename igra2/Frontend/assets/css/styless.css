@@ -1,0 +1,151 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-image: url('/Frontend/assets/public/images/assets.webp');
+  background-size: cover; /* Растягивает изображение на весь экран */
+  background-position: center center; /* Центрирует изображение */
+  background-attachment: fixed; /* Фиксирует изображение при прокрутке */
+  min-height: 100vh; /* Устанавливает минимальную высоту для body */
+}
+
+.section {
+  height: 300vh;
+  /* Каждая секция занимает весь экран */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+}
+
+#surface {
+  background-color: #3c9dc6;
+}
+
+#crust {
+  background-color: #a0522d;
+}
+
+/* Коричневатая кора */
+#upper-mantle {
+  background-color: #cd853f;
+}
+
+#middle-mantle {
+  background-color: #d2b48c;
+}
+
+#lower-mantle {
+  background-color: #deb887;
+}
+
+#core {
+  background-color: #8b0000;
+}
+
+/* Красное ядро */
+
+.depth-counter {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: #222;
+  padding: 10px 20px;
+  border-radius: 10px;
+  gap: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.digit-box {
+  width: 30px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+.km-label {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.temperature-indicator {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.thermo-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.degree {
+  margin-left: 4px;
+}
+
+.elevator-track {
+  position: fixed;
+  top: 0;
+  left: 60px;
+  /* Можно регулировать расположение */
+  width: 2px;
+  height: 100vh;
+  background-color: #ccc;
+  z-index: 900;
+  pointer-events: none;
+}
+
+.elevator-cabin {
+  position: fixed;
+  top: 0;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.elevator-cabin img {
+  width: 100%;
+  height: auto;
+}
+
+.person-inside {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px !important;
+  height: 60px !important;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.person-inside img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
